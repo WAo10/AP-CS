@@ -20,11 +20,14 @@ public class program2dot12
 	public static void main (String[] args)
 	{ // main
 
-		double quarters,dimes,nickels,pennies,total;  // intializing variables
-		NumberFormat money = NumberFormat.getCurrencyInstance(); // creates numberformat object
-		Scanner scan = new Scanner(System.in); // make scanner object
+		// intializing double objects
+		double quarters,dimes,nickels,pennies,total;
+		// creates numberformat and scanner objects
+		NumberFormat money = NumberFormat.getCurrencyInstance();
+		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Please enter the number of quarters"); // user input
+		// user input
+		System.out.println("Please enter the number of quarters");
 		quarters = scan.nextDouble();
 
 		System.out.println("Please enter the number of dimes");
@@ -36,9 +39,11 @@ public class program2dot12
 		System.out.println("Please enter the number of pennies");
 		pennies = scan.nextDouble();
 
-		total = quarters*.25 + dimes*.10 + nickels*.05 + pennies*.01; // use basic mathematics to acquire the total
+		//calculates total given coins from user
+		total = quarters*.25 + dimes*.10 + nickels*.05 + pennies*.01;
 
-		System.out.println("You have "+ money.format(total)+". Congrats. You did it."); //use numberformat for money value
+		//prints total money with currency format
+		System.out.println("You have "+ money.format(total)+". Congrats. You did it.");
 
 	}//end of class firstprog
 
