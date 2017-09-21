@@ -1,6 +1,6 @@
 //William Ao
-//Date:
-//Program:
+//Date: 9/18/17
+//Program: Triangle program
 
 /* Variable List
 
@@ -87,7 +87,7 @@ public static void main (String[] args)	// must have main
 		a2 = scan.nextDouble();
 		a3 = scan.nextDouble();
 
-		if (!((a1+a2+a3)==180))
+		if ((!((a1+a2+a3)==180))|| a1==0 || a2==0 || a3==0)
 		{
 			System.out.println("Error, invalid angles");
 		}
