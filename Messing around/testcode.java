@@ -15,8 +15,16 @@ public class testcode //must have a class that is the same name as the file name
 {
 
 
-public static void main (String[] args)	// must have main
+public boolean istrue (dogman)	// must have main
 {
+	if (dogman=true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 
 
 
